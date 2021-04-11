@@ -1,0 +1,138 @@
+* {box-sizing: border-box;}
+
+[class*="col-"] {
+  width: 100%;
+  float: left;
+}
+ @media (min-width: 320px) and (max-width: 999px) {
+  .col-1 {width: 100%;}
+  .col-2 {width: 100%;}
+  .col-3 {width: 80%;}
+  .col-4 {width: 80%;}
+  .col-5 {width: 80%;}
+  .col-6 {width: 100%;}
+}
+  @media only screen and (min-width: 1000px) {
+  /* For desktop: */
+  .col-1 {width: 100%;}
+  .col-2 {width: 100%;}
+  .col-3 {width: 22%;}
+  .col-4 {width: 22%;}
+  .col-5 {width: 22%;}
+  .col-6 {width: 100%;}
+}
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  color: hsl(0, 0%, 95%);
+  text-align: left;
+  margin: 0 30px 20px 60px;
+}
+
+.content-text {
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  text-align: left;
+  line-height: 1.5;
+  width: 60%;
+  margin: 0 0 0 60px;
+  font-size: 0.9em;
+  height: 150px;
+}
+body{
+  background-color: hsl(0, 0%, 95%);
+}
+img {
+  margin: 50px 0 30px 60px;
+}
+.header{
+  background-color: hsl(0, 0%, 95%);
+  height: 150px;
+}
+.main{
+  background-color:hsl(0, 0%, 95%);
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  min-height: 730px;
+  }
+.box-sedan{
+  background-color: hsl(31, 77%, 52%);
+  height: 480px;
+  margin: 0;
+  position: relative;
+  border-radius: 10px 0 0 10px;
+}
+
+.box-suv{
+  background-color: hsl(184, 100%, 22%);
+  height: 480px;
+  margin: 0;
+  position: relative;
+}
+.box-luxury{
+  background-color: hsl(179, 100%, 13%);
+  height: 480px;
+  margin: 0;
+  position: relative;
+  border-radius: 0 10px 10px 0;
+}
+.disclaimer{
+  clear: left;
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  background-color:hsl(0, 0%, 95%);
+}
+
+.btn {
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  padding: 10px 20px 10px 20px;
+  background-color: hsl(0, 0%, 95%);
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin: 60px;
+}
+
+.btn-sedan {
+  color: hsl(31, 77%, 52%)
+}
+
+.btn-sedan:active {
+  color: hsl(0, 0%, 95%);
+  background: hsl(31, 77%, 52%);
+}
+
+.btn-suv {
+  color: #006970;
+}
+
+.btn-suv:active {
+  color: hsl(0, 0%, 95%);
+  background: #006970;
+}
+
+.btn-luxury {
+  color: #004241;
+}
+
+.btn-luxury:active {
+  color: hsl(0, 0%, 95%);
+  background: #004241;
+}
+
+.btn:active {
+  border: solid #FFFFFF 1px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  text-decoration: none;
+}
