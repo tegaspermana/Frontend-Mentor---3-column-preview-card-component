@@ -1,26 +1,41 @@
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
-[class*="col-"] {
-  width: 100%;
-  float: left;
+@media screen and (max-width: 999px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .box-sedan {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .box-luxury {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .col {
+    width: 18rem;
+  }
 }
- @media (min-width: 320px) and (max-width: 999px) {
-  .col-1 {width: 100%;}
-  .col-2 {width: 100%;}
-  .col-3 {width: 80%;}
-  .col-4 {width: 80%;}
-  .col-5 {width: 80%;}
-  .col-6 {width: 100%;}
-}
-  @media only screen and (min-width: 1000px) {
+
+@media screen and (min-width:1000px) {
+
   /* For desktop: */
-  .col-1 {width: 100%;}
-  .col-2 {width: 100%;}
-  .col-3 {width: 22%;}
-  .col-4 {width: 22%;}
-  .col-5 {width: 22%;}
-  .col-6 {width: 100%;}
+  .col {
+    width: 18rem;
+  }
+
+  .box-sedan {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .box-luxury {
+    border-radius: 0 10px 10px 0;
+  }
 }
+
 h1 {
   font-family: 'Big Shoulders Display', cursive;
   color: hsl(0, 0%, 95%);
@@ -38,52 +53,63 @@ h1 {
   font-size: 0.9em;
   height: 150px;
 }
-body{
+
+body {
   background-color: hsl(0, 0%, 95%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
 img {
   margin: 50px 0 30px 60px;
 }
-.header{
+
+/*.header{
   background-color: hsl(0, 0%, 95%);
   height: 150px;
-}
-.main{
-  background-color:hsl(0, 0%, 95%);
+}*/
+.main {
+  background-color: hsl(0, 0%, 95%);
   text-align: left;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   position: relative;
-  min-height: 730px;
-  }
-.box-sedan{
+  min-height: 100vh;
+}
+
+.box-sedan {
   background-color: hsl(31, 77%, 52%);
   height: 480px;
   margin: 0;
   position: relative;
-  border-radius: 10px 0 0 10px;
 }
 
-.box-suv{
+.box-suv {
   background-color: hsl(184, 100%, 22%);
   height: 480px;
   margin: 0;
   position: relative;
 }
-.box-luxury{
+
+.box-luxury {
   background-color: hsl(179, 100%, 13%);
   height: 480px;
   margin: 0;
   position: relative;
-  border-radius: 0 10px 10px 0;
 }
-.disclaimer{
-  clear: left;
+
+.disclaimer {
   display: flex;
   justify-content: center;
-  height: 20px;
-  background-color:hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 95%);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 0.8em;
+}
+
+.disclaimer a {
+  margin-left: 2px;
 }
 
 .btn {
